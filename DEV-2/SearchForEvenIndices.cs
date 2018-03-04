@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
-namespace DEV_2
 
+namespace DEV_2
 {
     /// <summary>
     /// The SearchForEvenIndices class is the main class of the program that works with the string
