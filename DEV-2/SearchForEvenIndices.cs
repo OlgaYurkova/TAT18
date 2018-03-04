@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Text;
 namespace DEV_2
+
 {
     /// <summary>
-    ///The SearchForEvenIndices class is the main class of the program that works with the string
-    ///Outputs to the console the original string consisting of characters with even indices
+    /// The SearchForEvenIndices class is the main class of the program that works with the string
+    /// Outputs to the console the original string consisting of characters with even indices
     /// </summary>
     class SearchForEvenIndices
     {
@@ -20,7 +21,7 @@ namespace DEV_2
 
             if (inputString.Length == 0)
             {
-                Console.WriteLine("The string wasn't entered");
+                Console.WriteLine("The string length is null");
             }
 
             Console.WriteLine(inputString);
