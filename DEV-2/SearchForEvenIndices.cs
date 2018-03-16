@@ -7,24 +7,30 @@ namespace DEV_2
     /// The SearchForEvenIndices class is the main class of the program that works with the string
     /// Outputs to the console the original string consisting of characters with even indices
     /// </summary>
-    class SearchForEvenIndices
+    public class SearchForEvenIndices
     {
         static void Main()
         {
             Console.WriteLine("input string :");
-            StringBuilder inputString = new StringBuilder(Console.ReadLine());
+            String input = Console.ReadLine();
+            SearchForEvenIndices index = new SearchForEvenIndices();
+            Console.WriteLine(index.FormatString(input));
+        }
 
-            for (int i = 1; i < inputString.Length; i++)
+        public string FormatString(string input)
+        {
+            if (input == null)
             {
-                inputString.Remove(i, 1);
+                throw new ArgumentNullException(nameof(input));
             }
 
-            if (inputString.Length == 0)
-            {
-                Console.WriteLine("The string length is null");
-            }
+            StringBuilder inputString = new StringBuilder();
 
-            Console.WriteLine(inputString);
+            for (int i = 0; i < input.Length; i += 2)
+            {
+                inputString.Append(input[i]);
+            }
+            return inputString.ToString();
         }
     }
 }
