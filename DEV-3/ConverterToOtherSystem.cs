@@ -20,10 +20,10 @@ namespace DEV_3
             primаryOfSystem = valueBase;
         }
 
-        private char GetPartOfNumber(int numberOfSymbol)
+        private char GetPartOfNumber(int number)
         {
-            string allSymbols = "0123456789ABCDEFGHIJ";
-            return allSymbols[numberOfSymbol];
+            string symbols = "0123456789ABCDEFGHIJ";
+            return symbols[number];
         }
 
         public string GetChangedNumber(BigInteger inputNumber)
@@ -36,7 +36,6 @@ namespace DEV_3
                 inputNumber /= primаryOfSystem;
             }
             while (inputNumber > 0);
-
             return changedNumber.ToString();
         }
     }

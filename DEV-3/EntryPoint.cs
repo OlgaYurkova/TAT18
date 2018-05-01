@@ -11,8 +11,8 @@ namespace DEV_3
             {
                 BigInteger inputNumber = BigInteger.Parse(args[0]);
                 int primаryOfNewSystem = Int32.Parse(args[1]);
-                ConverterToOtherSystem converter = new ConverterToOtherSystem(primаryOfNewSystem);
 
+                ConverterToOtherSystem converter = new ConverterToOtherSystem(primаryOfNewSystem);
                 Console.WriteLine(converter.GetChangedNumber(inputNumber));
             }
             catch (Exception error)
